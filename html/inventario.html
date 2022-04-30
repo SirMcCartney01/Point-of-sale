@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cesar Eduardo Placido Velazco">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-icons.css">
+    <link rel="icon" href="../imagenes/favicon.png">
+	<title>Eleventa</title>
+</head>
+<body>
+    <header id="cabecera">
+        <label id="exitText">Le atiende: </label>
+        <form id="formulario1" name="fieldset1" action="login.html" method="get">
+            <input id="botonExit" type="submit" name="enviar" value="✘" title="Salir">
+        </form>
+        <h1 class="principal">
+            <a><img src="../imagenes/logo.png" alt="Eleventa" height="80px" width="230px"></a>
+        </h1>
+        <label id="activeUser">Don Ramón</label>
+    </header>
+    <br>
+
+    <!--VENTAS-->
+    <form id="formularioVentas" name="fieldset1" action="ventas.html" method="get">
+        <input id="boton" type="submit" name="enviar" value="🛒 Ventas">
+    </form>
+
+     <!--PRODUCTOS-->
+     <form id="formularioProductos" name="fieldset1" action="productos.html" method="get">
+        <input id="boton" type="submit" name="productos" value="🔎 Productos">
+    </form>
+
+    <!--INVENTARIO-->
+    <form id="formularioInventario" name="fieldset1" action="inventario.html" method="get">
+        <input id="boton" type="submit" name="inventario" value="📔 Inventario">
+    </form>
+
+     <!--CORTE DE CAJA-->
+     <form id="formularioCorte" name="fieldset1" action="corte.html" method="get">
+        <input id="boton" type="submit" name="corte" value="✂ Corte de Caja">
+    </form>
+    <br><br>
+
+    <header id="tiraVentas">
+        <label style="font-size: 20px;">INVENTARIO</label>
+    </header>
+
+    <!--Area de inventario-->
+   <div id="test">
+    <section id="seccion">
+        <article>
+            <form id="formulario1" name="fieldset1" action="http://localhost:8080/ejemplo" method="get">
+                <legend align="center" style="font-size: 30px; color: transparent;">I'm cheating my nigga</legend>
+                <fieldset>
+                    <legend align="center" style="font-size: 30px;">Agregar nuevo producto</legend>
+                    <p>
+                        <br>
+                        <br><br>
+                        <label id="labelInventory"  for="codigo">Código de barras:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                        <input   type="text" id="inputBoxesMain" name="codigo" size="60" placeholder="12345678" required>
+                        <br><br>
+                        <label id="labelInventory" for="producto">Nombre:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input  type="text" id="inputBoxesMain" name="producto" size="60" placeholder="Gansito" required>
+                        <br><br>
+                        <label id="labelInventory" for="marca">Marca: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input  type="text" id="inputBoxesMain" name="marca" size="60" placeholder="Marinela" required>
+                        <br><br>
+                        <label id="labelInventory" for="stock">Stock: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input  type="text" id="inputBoxesMain" name="stock" size="60" placeholder="50" required>
+                        <br><br>
+                        <label id="labelInventory" for="precio">Precio unitario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input  type="text" id="inputBoxesMain" name="precio" size="60" placeholder="$10" required>
+                        <br><br>
+                        <label id="labelInventory" for="dpto">Departamento:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input  type="text" id="inputBoxesMain" name="dpto" size="60" placeholder="Abarrotes" required>
+                        <br><br>
+                    </p>
+                </fieldset>
+                <br><br>
+                
+                <br><br>
+                <input id="boton" type="submit" name="enviar" value="💾 Guardar">
+                &nbsp;&nbsp;
+                <input id="boton" type="reset" value="🗑 Limpiar campos">
+            </form>
+        </article>
+    </section>
+   </div>
+    <br><br><br><br>
+    </body>
+<footer id="pie">
+    <small>&copy; 2022 Eleventa | Todos los derechos reservados. </small>
+</footer>
+</html>

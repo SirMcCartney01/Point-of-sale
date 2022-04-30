@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Cesar Eduardo Placido Velazco">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="../css/login.css">
+        <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+        <link rel="icon" href="../imagenes/favicon.png">
+        <title>Eleventa</title>
+    </head>
+    <body class="login">
+        <div id="agrupar">
+            <section id = "section">
+                <div class="wrapper fadeInDown">
+                    <div id="formContent">
+                        <!-- Icono de usuario -->
+                        <div class="fadeIn first">
+                            <img src="../imagenes/user.png" width="150px" height="150px" style="margin-top: 10px;">
+                        </div>
+                
+                        <!-- Caja de inicio de sesión -->
+                        <form method="get" action="http://192.168.1.9/Proyecto/php/conexion.php">
+                            <input type="text" class="fadeIn second" name="usuario" placeholder="Usuario">
+                            <input type="password" class="fadeIn third" name="contraseña" placeholder="Contraseña">
+                            <input type="submit" class="fadeIn fourth" value="Iniciar sesión">
+                            <div class="alert alert-danger">¡Usuario y/o contraseña incorrectos!</div>
+                        </form>
+                
+                        <!-- Contraseña olvidada -->
+                        <div id="formFooter">
+                            <a class="underlineHover" href="#">¿Olvidó la contraseña?</a>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+    <footer id="pie">
+        <small>&copy; 2022 Eleventa | Todos los derechos reservados. </small>
+    </footer>
+</html>

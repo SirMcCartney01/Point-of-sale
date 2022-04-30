@@ -1,0 +1,274 @@
+#seccion{
+    float: center;
+    /*width: 900px;*/
+    }
+
+#test{
+    width: 1080px;
+    margin:  auto;
+}
+
+#pie{
+    text-align: center;
+    }
+
+#cabecera{
+            background: rgba(78, 132, 233, 0.459);
+            padding: 0px;
+        }
+
+#tiraVentas{
+        background: linear-gradient(to right, #6699ff 29%, #ffffff 100%);
+        padding: 10px;
+        margin-top: 10px;
+        }
+
+body.login{
+      background-image: url(../imagenes/background.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+}
+
+#title{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(49,79,4,255);
+}
+
+#agrupar{
+    width: 800px;
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+
+#bottom {
+    padding: 100px 1000px ;
+    clear: both;
+}
+
+#boton{
+    font-size:20px;
+    font-family:Verdana,Helvetica;
+    color:black;
+    padding: 8px;
+    width: 200px;
+ }
+
+ #botonExit{
+    font-size:10px;
+    font-family:Verdana,Helvetica;
+    color:black;
+    width: 30px;
+    float: right;
+    background-color: red;
+    border-color: transparent;
+    margin-right: -135px;
+    margin-top: 5px;
+ }
+
+ #botonAgregar{
+    font-size:21px;
+    font-family:Verdana,Helvetica;
+    color:black;
+    padding: 8px;
+    width: 400px;
+    float: right;
+    margin-top: 10px;
+ }
+
+ #botonCobrar{
+    font-size:35px;
+    font-family:Verdana,Helvetica;
+    color:black;
+    padding: 8px;
+    width: 300px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 60px;
+ }
+
+ #inputBox{
+    width: 30%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    float: right;
+    margin-right: 150px;
+}
+
+#inputBoxVentas{
+    width: 55%;
+    padding: 15px 10px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#inputBoxesMain{
+    width: 40%;
+    padding: 8px 5px;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    float: right;
+    margin-right: 120px;
+    margin-bottom: 10px;
+} 
+
+#labelInventory{
+    font-family: Georgia, serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-left: 200px;
+    float: center;
+    font-weight: 0.8;
+}
+
+#labels{
+    font-family: Georgia, serif;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 30px;
+    margin-left: 200px;
+    float: left;
+    font-weight: 0.8;
+}
+
+#corteBanner{
+    font-family: Georgia, serif;
+    color: rgb(212, 37, 37);
+    font-weight: 100;
+    font-size: 50px;
+
+}
+
+#datosCambio{
+    font-family: Georgia, serif;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    font-size: 30px;
+    float: left;
+    font-weight: 0.8;
+    padding: 25px 25px 0px 40px;
+}
+
+#variablesCambio{
+    font-family: Georgia, serif;
+    color: blue;
+    font-weight: 100;
+    font-size: 30px;
+    float: left;
+    font-weight: 0.8;
+    margin: 0px 50px 15px 90px;
+}
+
+#productTag{
+    font-family: Georgia, serif;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 0.8;
+    float: left;
+    margin-top: 10px;
+    padding-right: 20px;
+}
+
+  h1.principal {
+    font: 15px Helvetica, sans-serif;
+    text-align: left;	
+    margin: 0px;
+}
+
+#fieldsetFormat{
+    font-family: Georgia, serif;
+    font-size: 25px;
+    background: rgba(169,169,169, 0.5);
+    border: transparent;
+}
+
+#exitText{
+    font: 15px Helvetica, sans-serif;
+    float: right;
+    margin-right: 70px;
+    margin-top: 5px;
+}
+
+#activeUser{
+    font: 20px Helvetica, sans-serif;
+    float: right;
+    font-weight: bold;
+    margin-right: 60px;
+    margin-top: -50px;
+    margin-right: 50px;
+}
+
+#formularioVentas{
+    float: left;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#formularioProductos{
+    float: left;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#formularioInventario{
+    float: left;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#formularioCorte{
+    float: left;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+#tablaProductos{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font: 20px verdana, sans-serif;
+    margin-top: 30px;
+}
+
+th, td {
+    padding: 10px;
+    border-left: 1px solid black;
+    border-top: 2px solid white;
+  }
+#tablaProductos th {
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+  }
+
+  #totalPagar{
+    font-family: Georgia, serif;
+    color: blue;
+    font-size: 80px;
+    font-weight: bold;
+    float: right;
+    margin-right: 30px;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+    text-align: center;
+    font: 20px verdana, sans-serif;
+  }
+  #t01 tr:nth-child(odd) {
+   background-color: #fff;
+   text-align: center;
+   font: 20px verdana, sans-serif;
+  }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Cesar Eduardo Placido Velazco">
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-icons.css">
+        <link rel="icon" href="../imagenes/favicon.png">
+        <title>Eleventa</title>
+    </head>
+    <body>
+        <header id="cabecera">
+            <label id="exitText">Le atiende: </label>
+            <form id="formulario1" name="fieldset1" action="login.html" method="get">
+                <input id="botonExit" type="submit" name="enviar" value="✘" title="Salir">
+            </form>
+            <h1 class="principal">
+                <a><img src="../imagenes/logo.png" alt="Eleventa" height="80px" width="230px"></a>
+            </h1>
+            <? $usuario = $_GET['usuario'];?>
+            <label id="activeUser">Don Ramón</label>
+        </header>
+        <br>
+
+        <!--VENTAS-->
+        <form id="formularioVentas" name="fieldset1" action="ventas.html" method="get">
+            <input id="boton" type="submit" name="enviar" value="🛒 Ventas">
+        </form>
+
+        <!--PRODUCTOS-->
+        <form id="formularioProductos" name="fieldset1" action="productos.html" method="get">
+            <input id="boton" type="submit" name="productos" value="🔎 Productos">
+        </form>
+
+        <!--INVENTARIO-->
+        <form id="formularioInventario" name="fieldset1" action="inventario.html" method="get">
+            <input id="boton" type="submit" name="inventario" value="📔 Inventario">
+        </form>
+
+        <!--CORTE DE CAJA-->
+        <form id="formularioCorte" name="fieldset1" action="corte.html" method="get">
+            <input id="boton" type="submit" name="corte" value="✂ Corte de Caja">
+        </form>
+        <br><br>
+        <header id="tiraVentas">
+            <label style="font-size: 20px;">VENTA - Ticket #1</label>
+        </header>
+
+        <!--AREA DE VENTA-->
+        <input id="botonAgregar" type="submit" name="agregarproductos" value="✔ ENTER - Agregar a la venta">
+        <input type="text" id="inputBoxVentas" name="codigoProducto" required>
+        <label id="productTag">Código del producto: </label>
+        <img src="../imagenes/barcode.jpg" width="80px" height="50px" style="margin-top: 10px;">
+        <table id="tablaProductos">
+            <colgroup>
+                <col span="1" style="background-color:rgba(78, 132, 233, 0.459)">
+                <col span="2" style="background-color:rgb(250, 250, 250)">
+                <col span="1" style="background-color:rgb(179, 231, 179)">
+            </colgroup>
+            <tr>
+            <th>Código</th>
+            <th>Nombre del producto</th> 
+            <th>Cantidad</th>
+            <th>Precio</th>
+            </tr>
+            <tr>
+            <td>00000000</td>
+            <td>Coca cola 600ml</td>
+            <td>2</td>
+            <td>$30</td>
+            </tr>
+            <tr>
+            <td>11111111</td>
+            <td>Toreadas habanero</td>
+            <td>1</td>
+            <td>$10</td>
+            </tr>
+            <tr>
+            <td>22222222</td>
+            <td>Trident Xtra care</td>
+            <td>3</td>
+            <td>$36</td>
+            </tr>
+            <tr>
+                <td><br><br><br><br><br><br><br><br><br><br></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+            <label id="totalPagar">$76.0</label>
+            <input id="botonCobrar" type="submit" name="enviar" value="💰 Cobrar">
+            <label id="datosCambio">Total a pagar:</label>
+            <label id="datosCambio">Paga con:</label>
+            <label id="datosCambio">Su cambio:</label>
+            <br><br><br><br>
+            <label id="variablesCambio">$76.0</label>
+            <label id="variablesCambio">$100.0</label>
+            <label id="variablesCambio">$24.0</label>
+        <br><br><br><br>
+    </body>
+    <footer id="pie">
+        <small>&copy; 2022 Eleventa | Todos los derechos reservados. </small>
+    </footer>
+</html>
