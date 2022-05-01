@@ -5,6 +5,7 @@
     <meta name="author" content="Cesar Eduardo Placido Velazco">
 	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../js/alerts.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     <link rel="icon" href="../imagenes/favicon.png">
@@ -52,8 +53,7 @@
    <div id="test">
     <section id="seccion">
         <article>
-            <form id="formulario1" name="fieldset1" action="http://localhost:8080/ejemplo" method="get">
-                <legend align="center" style="font-size: 30px; color: transparent;">I'm cheating my nigga</legend>
+            <form id="formulario1" name="fieldset1" action="../php/agregarInventario.php" method="post">
                 <fieldset>
                     <legend align="center" style="font-size: 30px;">Agregar nuevo producto</legend>
                     <p>
@@ -62,27 +62,25 @@
                         <label id="labelInventory"  for="codigo">Código de barras:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
                         <input class="form-control form-control-lg" type="text" id="inputBoxesMain" name="codigo" size="60" placeholder="12345678" required>
                         <br><br>
-                        <label id="labelInventory" for="producto">Nombre:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <label id="labelInventory" for="producto">Producto:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input class="form-control form-control-lg" type="text" id="inputBoxesMain" name="producto" size="60" placeholder="Gansito" required>
                         <br><br>
                         <label id="labelInventory" for="marca">Marca: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input class="form-control form-control-lg" type="text" id="inputBoxesMain" name="marca" size="60" placeholder="Marinela" required>
                         <br><br>
+                        <label id="labelInventory" for="dpto">Departamento:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input class="form-control form-control-lg" type="text" id="inputBoxesMain" name="dpto" size="60" placeholder="Abarrotes" required>
+                        <br><br>
                         <label id="labelInventory" for="stock">Stock: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input class="form-control form-control-lg" type="text" id="inputBoxesMain" name="stock" size="60" placeholder="50" required>
                         <br><br>
-                        <label id="labelInventory" for="precio">Precio unitario:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <label id="labelInventory" for="precio">Precio:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
                         <input class="form-control form-control-lg" type="text" id="inputBoxesMain" name="precio" size="60" placeholder="$10" required>
-                        <br><br>
-                        <label id="labelInventory" for="dpto">Departamento:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input class="form-control form-control-lg" type="text" id="inputBoxesMain" name="dpto" size="60" placeholder="Abarrotes" required>
                         <br><br>
                     </p>
                 </fieldset>
                 <br><br>
-                
-                <br><br>
-                <input id="boton" type="submit" name="enviar" value="💾 Guardar">
+                <input id="boton" type="submit" name="enviar" value="💾 Guardar" onclick="confirmationAlert()">
                 &nbsp;&nbsp;
                 <input id="boton" type="reset" value="🗑 Limpiar campos">
             </form>
