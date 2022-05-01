@@ -1,48 +1,7 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Cesar Eduardo Placido Velazco">
-        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-        <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="icon" href="../imagenes/favicon.png">
-        <title>Eleventa</title>
-    </head>
-    <body>
-        <header id="cabecera">
-            <label id="exitText">Le atiende: </label>
-            <form id="formulario1" name="fieldset1" action="login.html" method="get">
-                <input id="botonExit" type="submit" name="enviar" value="✘" title="Salir">
-            </form>
-            <h1 class="principal">
-                <a><img src="../imagenes/logo.png" alt="Eleventa" height="80px" width="230px"></a>
-            </h1>
-            <!--<? $usuario = $_GET['usuario'];?>  TRYING TO FETCH THE USER NAME-->
-            <label id="activeUser">Don Ramón</label>
-        </header>
-        <br>
+<?php
+    include 'layout/header.php';
+?>
 
-        <!--VENTAS-->
-        <form id="formularioVentas" name="fieldset1" action="ventas.html" method="get">
-            <input id="boton" type="submit" name="enviar" value="🛒 Ventas">
-        </form>
-
-        <!--PRODUCTOS-->
-        <form id="formularioProductos" name="fieldset1" action="../php/productos.php">
-            <input id="boton" type="submit" name="productos" value="🔎 Productos">
-        </form>
-
-        <!--INVENTARIO-->
-        <form id="formularioInventario" name="fieldset1" action="inventario.html" method="get">
-            <input id="boton" type="submit" name="inventario" value="📔 Inventario">
-        </form>
-
-        <!--CORTE DE CAJA-->
-        <form id="formularioCorte" name="fieldset1" action="corte.html" method="get">
-            <input id="boton" type="submit" name="corte" value="✂ Corte de Caja">
-        </form>
-        <br><br>
         <header id="tiraVentas">
             <label style="font-size: 20px;">VENTA - Ticket #1</label>
         </header>
