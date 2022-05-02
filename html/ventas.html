@@ -25,22 +25,22 @@
 
         <!--VENTAS-->
         <form id="formularioVentas" name="fieldset1" action="ventas.html" method="get">
-            <input id="boton" type="submit" name="enviar" value="🛒 Ventas">
+            <input class="btn btn-light" id="boton" type="submit" name="enviar" value="🛒 Ventas">
         </form>
 
         <!--PRODUCTOS-->
         <form id="formularioProductos" name="fieldset1" action="../php/productos.php">
-            <input id="boton" type="submit" name="productos" value="🔎 Productos">
+            <input class="btn btn-light" id="boton" type="submit" name="productos" value="🔎 Productos">
         </form>
 
         <!--INVENTARIO-->
         <form id="formularioInventario" name="fieldset1" action="inventario.html" method="get">
-            <input id="boton" type="submit" name="inventario" value="📔 Inventario">
+            <input class="btn btn-light" id="boton" type="submit" name="inventario" value="📔 Inventario">
         </form>
 
         <!--CORTE DE CAJA-->
         <form id="formularioCorte" name="fieldset1" action="corte.html" method="get">
-            <input id="boton" type="submit" name="corte" value="✂ Corte de Caja">
+            <input class="btn btn-light" id="boton" type="submit" name="corte" value="✂ Corte de Caja">
         </form>
         <br><br>
         <header id="tiraVentas">
@@ -48,7 +48,7 @@
         </header>
 
         <!--AREA DE VENTA-->
-        <input id="botonAgregar" type="submit" name="agregarproductos" value="✔ ENTER - Agregar a la venta">
+        <input class="btn btn-outline-info" id="botonAgregar" type="submit" name="agregarproductos" value="✔ ENTER - Agregar a la venta">
         <!--input type="text"  required-->
         <input class="form-control form-control-lg" type="text" id="inputBoxVentas" name="codigoProducto">
         <label id="productTag">Código del producto: </label>
@@ -91,7 +91,7 @@
             </tr>
         </table>
             <label id="totalPagar">$76.0</label>
-            <input id="botonCobrar" type="submit" name="enviar" value="💰 Cobrar">
+            <input class="btn btn-outline-success" id="botonCobrar" type="submit" name="enviar" value="💰 Cobrar">
             <label id="datosCambio">Total a pagar:</label>
             <label id="datosCambio">Paga con:</label>
             <label id="datosCambio">Su cambio:</label>

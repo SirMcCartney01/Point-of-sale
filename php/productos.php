@@ -24,35 +24,39 @@
 
       <!--VENTAS-->
       <form id="formularioVentas" name="fieldset1" action="../html/ventas.html" method="get">
-          <input id="boton" type="submit" name="enviar" value="🛒 Ventas">
+          <input class="btn btn-light" id="boton" type="submit" name="enviar" value="🛒 Ventas">
       </form>
 
       <!--PRODUCTOS-->
       <form id="formularioProductos" name="fieldset1" action="productos.php" method="get">
-          <input id="boton" type="submit" name="productos" value="🔎 Productos">
+          <input class="btn btn-light" id="boton" type="submit" name="productos" value="🔎 Productos">
       </form>
 
       <!--INVENTARIO-->
       <form id="formularioInventario" name="fieldset1" action="../html/inventario.html" method="get">
-          <input id="boton" type="submit" name="inventario" value="📔 Inventario">
+          <input class="btn btn-light" id="boton" type="submit" name="inventario" value="📔 Inventario">
       </form>
 
       <!--CORTE DE CAJA-->
       <form id="formularioCorte" name="fieldset1" action="../html/corte.html" method="get">
-          <input id="boton" type="submit" name="corte" value="✂ Corte de Caja">
+          <input class="btn btn-light" id="boton" type="submit" name="corte" value="✂ Corte de Caja">
       </form>
 
       <br><br>
       <header id="tiraVentas">
           <label style="font-size: 20px;">PRODUCTOS</label>
       </header>
-
+    </div>
       <!--AREA DE PRODUCTOS-->
-      <input id="botonAgregar" type="submit" name="agregarproductos" value="✔ ENTER - Buscar articulo">
-      <input class="form-control form-control-lg"  type="text" id="inputBoxVentas" name="codigoProducto" required>
+      <form action = "productos.php"  method = "get">
+      <input class="btn btn-outline-info" id="botonAgregar" type="submit" name="agregarproductos" value="✔ ENTER - Buscar articulo">
+      <input class="form-control form-control-lg"  type="text" id="inputBoxVentas" name="nombreProducto">
+      </form>
       <label id="productTag">Nombre del producto: </label>
       <img src="../imagenes/barcode.jpg" width="80px" height="50px" style="margin-top: 10px;">
       <br><br>
+
+      
       
       <table id="t01" class = "table">
         <thead>
@@ -72,8 +76,13 @@
 
                 $link = Conectar();
 
-                // read all row from database table
-                $sql = "SELECT * FROM productos";
+                $producto = $_GET["nombreProducto"];
+                if($producto == null){
+                    $sql = "SELECT * FROM productos ";
+                }else{
+                    $sql = "SELECT * FROM productos WHERE producto = '".$producto."'";
+                }
+                
                 $result = $link->query($sql);
 
                 if (!$result) {
