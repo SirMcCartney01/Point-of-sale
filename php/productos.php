@@ -88,7 +88,7 @@
                             <td>" . $row["marca"] . "</td>
                             <td>" . $row["departamento"] . "</td>
                             <td>" . $row["stock"] . "</td>
-                            <td>" . $row["precio"] . "</td>
+                            <td>$" . $row["precio"] . "</td>
                         </tr>";
                 }
 
