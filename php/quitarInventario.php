@@ -10,25 +10,20 @@
 
             $link = Conectar();
 
-            $codigo = trim($_POST['codigo']);
-            $producto = trim($_POST['producto']);
-            $marca = trim($_POST['marca']);
-            $departamento = trim($_POST['dpto']);
-            $stock = trim($_POST['stock']);
-            $precio = trim($_POST['precio']);
-            $consulta = "INSERT INTO productos(codigo, producto, marca, departamento, stock, precio) VALUES ('$codigo','$producto','$marca','$departamento','$stock','$precio')";
+            $code = $_POST['codigoEliminar'];
+            $consulta = "DELETE FROM productos WHERE codigo = '".$code."'";
             $resultado = mysqli_query($link,$consulta);
                 if ($resultado) {
                     ?>
                     <script>
-                        confirmationAlert();
+                        deleteConfirmationAlert();
                         window.location.href = "../html/inventario.html";
                     </script>
                     <?php
                 }else{
                     ?>
                     <script>
-                        errorAlert();
+                        deleteErrorAlert();
                         window.location.href = "../html/inventario.html";
                     </script>
                     <?php

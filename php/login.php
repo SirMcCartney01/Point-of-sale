@@ -12,10 +12,10 @@
 
 	if($nr == 1)
 	{
-		header("Location: http://192.168.1.9/Proyecto/html/ventas.html");
+		header("Location: ../html/ventas.html");
 	}
 	else
 	{
-		header("Location: http://192.168.1.9/Proyecto/html/loginError.html");
+		header("Location: ../html/loginError.html");
 	}
 ?>

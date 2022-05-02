@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="author" content="Cesar Eduardo Placido Velazco">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
-    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="icon" href="../imagenes/favicon.png">
     <title>Eleventa</title>
@@ -53,7 +52,7 @@
       <input class="form-control form-control-lg"  type="text" id="inputBoxVentas" name="nombreProducto">
       </form>
       <label id="productTag">Nombre del producto: </label>
-      <img src="../imagenes/barcode.jpg" width="80px" height="50px" style="margin-top: 10px;">
+      <br><br>
       <br><br>
 
       
